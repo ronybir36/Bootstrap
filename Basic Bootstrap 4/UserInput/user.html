@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+   <div class="container">
+    <h2 class="text-center bg-primary mt-3 p-4">User Registration</h2>
+    <form action="PHP server.php" method="post">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control form-control" type="text" id="username" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input class="form-control form-control" type="email" id="mail" placeholder="Enter your Email">
+                <small class="form-text text-muted">Your email will not be shared with anyone</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="password" id="password" placeholder="password">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender">
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">File input</label>
+                <input class="form-control-file" type="file" id="file">
+                <small class="form-text text-muted" id="fileHelp">Max 3mb size</small>
+            </div>
+
+            <fieldset>
+                <legend>What are you using this service for?</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option1" checked> parsonal
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option2" checked> Commercial Use
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="radio" value="option3" disabled> Testing
+                    </label>
+                </div>
+            </fieldset><br>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox"> Sign up for newsletter
+                </label>
+            </div>
+            <button class="btn btn-primary mt-3" type="submit">Submit</button>
+        </form>
+   </div>
+</body>
+</html>

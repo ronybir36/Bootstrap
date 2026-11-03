@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerts & Progress Bars</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<h1 class="display-4 text-center my-4">Alerts & Progress Bars</h1>
+
+<div class="container">
+
+    <!-- ALERTS -->
+    <div class="alert alert-success">
+        <strong>Success!</strong> Blog post added
+        <a href="#" class="alert-link">Check it out</a>
+    </div>
+
+    <div class="alert alert-info">
+        <strong>Attention!</strong> You have a new message
+        <a href="#" class="alert-link">Check it out</a>
+    </div>
+
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> Please check the log files
+        <a href="#" class="alert-link">Check it out</a>
+    </div>
+
+    <div class="alert alert-danger">
+        <h4 class="alert-heading">There's a Problem</h4>
+        <strong>Error!</strong> Database update failed
+        <a href="#" class="alert-link">Check it out</a>
+    </div>
+
+    <!-- DISMISSIBLE ALERT -->
+    <div class="alert alert-success alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        <strong>Success!</strong> Blog post added
+        <a href="#" class="alert-link">Check it out</a>
+    </div>
+
+    <br>
+
+    <!-- PROGRESS BARS -->
+    <div class="progress mb-2">
+        <div class="progress-bar" style="width:25%">25%</div>
+    </div>
+
+    <div class="progress mb-2">
+        <div class="progress-bar bg-success" style="width:50%">50%</div>
+    </div>
+
+    <div class="progress mb-2">
+        <div class="progress-bar bg-warning text-dark" style="width:75%">75%</div>
+    </div>
+
+    <div class="progress mb-2">
+        <div class="progress-bar bg-info" style="width:100%">100%</div>
+    </div>
+
+    <div class="progress mb-2">
+        <div class="progress-bar progress-bar-striped bg-danger" style="width:85%">
+            Bootstrap
+        </div>
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

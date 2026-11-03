@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltips</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="display-4 text-center my-4 font-weight-bold">Tooltips</h1>
+    <!--############START HERE ################-->
+    <!--TOOLTIPS-->
+    <div class="container">
+        <button class="btn btn-primary" data-placement="top" data-toggle="tooltip" title="Hello World">Tooltip on top</button>
+
+        <button class="btn btn-primary" data-placement="left" data-toggle="tooltip" title="Hello World">Tooltip on Left</button>
+
+        <button class="btn btn-primary" data-placement="right" data-toggle="tooltip" title="Hello World">Tooltip on Right</button>
+
+        <button class="btn btn-primary" data-placement="bottom" data-toggle="tooltip" title="Hello World">Tooltip on Bottom</button>
+
+        <br><br>
+
+        <!--Tooltips with Html-->
+        <button id="hello" class="btn btn-success" data-html="true" data-placement="top" data-toggle="tooltip" title="<h2>Hello World</h2> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, commodi.</p> ">Tooltip on top</button>
+
+        <br>
+        <hr>
+
+        <!--TRIGGER WITH JS-->
+            <button class="btn btn-secondary" onClick="showToolTip()">Show Tooltip</button>        
+            <button class="btn btn-warning" onClick="hideToolTip()">Hide Tooltip</button>        
+            <button class="btn btn-danger" onClick="toggleToolTip()">Toggle Tooltip</button>        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script>
+        $('[data-toggle="tooltip"]').tooltip();
+
+        function showToolTip(){
+            $('#hello').tooltip ('show');
+        }
+        function hideToolTip(){
+            $('#hello').tooltip ('hide');
+        }
+        function toggleToolTip(){
+            $('#hello').tooltip ('toggle');
+        }
+    </script>
+</body>
+</html>

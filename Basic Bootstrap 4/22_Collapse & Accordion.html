@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapse & Accordion</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="display-4 text-center my-4 font-weight-bold">Collapse & Accordion</h1>
+    <div class="container">
+        <!--################# STARTE HEARE ###############-->
+
+        <!--BUTTON WITH COLLAPSE-->
+        <button class="btn btn-primary mb-4" data-target="#collapse-1" data-toggle="collapse">Read More</button>
+
+        <div class="collapse" id="collapse-1">
+            <div class="card">
+                <div class="card-body">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio incidunt, provident illum harum repudiandae cupiditate necessitatibus illo nulla id ut ea numquam minus sapiente iusto tempora doloremque inventore dolorum ullam? Voluptatum nihil quaerat corrupti ipsum. Deleniti ratione ipsam fugit sapiente tenetur iusto corporis sit expedita voluptate, nisi id similique. Temporibus.
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!--ACCORDION-->
+        <div id="accordion" data-toggle="tablist">
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#section-1">Section 1</a>
+                    </h5>
+                </div>
+                <div class="collapse show" id="section-1" data-parent="#accordion">
+                    <div class="card-body">
+                        What do web developers do? In short, they build and maintain websites. Web developers often work for clients who are trying to get their product or service onto the web. The work is typically very project focused and involves collaborating with a team that helps to coordinate the client's needs into the end product.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#section-2">Section 2</a>
+                    </h5>
+                </div>
+                <div class="collapse" id="section-2" data-parent="#accordion">
+                    <div class="card-body">
+                        Web developers work independently as freelancers or with company teams to create websites. These professionals may focus on front-end or back-end development, depending on their specific roles.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" role="tab">
+                    <h5 class="mb-0">
+                        <a data-toggle="collapse" href="#section-3">Section 3</a>
+                    </h5>
+                </div>
+                <div class="collapse" id="section-3" data-parent="#accordion">
+                    <div class="card-body">
+                        The front end includes designing sites and coding what users see, while back-end development involves writing code to ensure proper functionality. Web developers may also become webmasters to provide maintenance, updates, and troubleshooting when needed.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

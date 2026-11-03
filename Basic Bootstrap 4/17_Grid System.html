@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System | Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <h1 class="display-4 text-center my-4 font-weight-bold">Grid System</h1>
+    <div class="container">
+        <!--########### START HEARE ##########-->
+
+        <!--AUTO LAYOUT COLUMNS-->
+        <div class="row">
+            <div class="col">
+                <h3>Rony</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minima perspiciatis itaque officia numquam iure autem. Doloribus magnam commodi minus, omnis iusto a beatae.</p>
+            </div>
+            <div class="col">
+                <h3>Rony</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minima perspiciatis itaque officia numquam iure autem. Doloribus magnam commodi minus, omnis iusto a beatae.</p>
+            </div>   
+        </div>
+        <br>
+
+        <!--RESPONSIVE CLASSES-->
+        <div class="row">
+            <div class="col-12 col-sm-3 col-md-4 col-lg-4 col-xl-6">
+                <h3>Rony</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minima perspiciatis itaque officia numquam iure autem. Doloribus magnam commodi minus, omnis iusto a beatae.</p>
+            </div>
+            <div class="col-12 col-sm-3 col-md-4 col-lg-6 col-xl-3">
+                <h3>Rony</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minima perspiciatis itaque officia numquam iure autem. Doloribus magnam commodi minus, omnis iusto a beatae.</p>
+            </div>   
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-3">
+                <h3>Rony</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minima perspiciatis itaque officia numquam iure autem. Doloribus magnam commodi minus, omnis iusto a beatae.</p>
+            </div>   
+        </div>
+        <br>
+
+        <!--NESTING GRIDS-->
+        <div class="row">
+            <div class="col">
+                <div class="card bg-light">
+                    <div class="card-body">
+                       <h3 class="text-center">Profile</h3>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla doloremque animi, dignissimos ab ducimus hic architecto iure odit facilis porro ipsum tempora perspiciatis iste neque!</p> 
+                       <div class="row">
+                        <div class="col col-sm-12 col-md-6 col-lg-3 mt-2">
+                            <div class="card bg-success text-light">
+                                <div class="card-body">
+                                    <h3 class="text-center">Card 1</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet maiores, facere, obcaecati magnam possimus delectus, quae nobis molestias voluptatibus quasi sint earum voluptatem reiciendis aliquid?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-sm-12 col-md-6 col-lg-3 mt-2">
+                            <div class="card bg-primary text-light">
+                                <div class="card-body">
+                                    <h3 class="text-center">Card 2</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet maiores, facere, obcaecati magnam possimus delectus, quae nobis molestias voluptatibus quasi sint earum voluptatem reiciendis aliquid?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-sm-12 col-md-6 col-lg-3 mt-2">
+                            <div class="card bg-primary text-light">
+                                <div class="card-body">
+                                    <h3 class="text-center">Card 3</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet maiores, facere, obcaecati magnam possimus delectus, quae nobis molestias voluptatibus quasi sint earum voluptatem reiciendis aliquid?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-sm-12 col-md-6 col-lg-3 mt-2">
+                            <div class="card bg-success text-light">
+                                <div class="card-body">
+                                    <h3 class="text-center">Card 4</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet maiores, facere, obcaecati magnam possimus delectus, quae nobis molestias voluptatibus quasi sint earum voluptatem reiciendis aliquid?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!--OFFSETTING COLUMNS-->
+    <div class="row">
+        <div class="col-3 offset-md-3">
+            <h3>Junaet</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat earum vitae ullam eveniet delectus perspiciatis harum quia esse ad neque!</p>
+        </div>
+        <div class="col-3 offset-3 offset-sm-6 offset-md-3">
+            <h3>Junaet</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat earum vitae ullam eveniet delectus perspiciatis harum quia esse ad neque!</p>
+        </div>
+    </div>
+    <br>
+    <!--REORDERING-->
+    <div class="row">
+        <div class="col order-3">
+            <h3>First Column</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa numquam a in ex! Ratione, ipsum.</p>
+        </div>
+        <div class="col order-4">
+            <h3>Second Column</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa numquam a in ex! Ratione, ipsum.</p>
+        </div>
+        <div class="col order-2">
+            <h3>Third Column</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa numquam a in ex! Ratione, ipsum.</p>
+        </div>
+        <div class="col order-1">
+            <h3>Fourth Column</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa numquam a in ex! Ratione, ipsum.</p>
+        </div>
+    </div>
+    </div>
+    
+<div style="margin-top: 200px;"></div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
